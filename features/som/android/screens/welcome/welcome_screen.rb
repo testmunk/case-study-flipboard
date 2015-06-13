@@ -1,8 +1,7 @@
-class WelcomeScreen
+require 'som/android/screens/screen'
 
-  def initialize(driver)
-    @driver = driver
-  end
+
+class WelcomeScreen < Screen
 
   def await
     @driver.wait_for_element_exists("* marked:'Welcome to Flipboard'")

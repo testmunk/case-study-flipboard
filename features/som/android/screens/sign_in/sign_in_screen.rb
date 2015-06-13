@@ -1,8 +1,7 @@
-class SignInScreen
+require 'som/android/screens/screen'
 
-  def initialize(driver)
-    @driver = driver
-  end
+
+class SignInScreen < Screen
 
   def await
     @driver.wait_for_element_exists("* id:'login_button'")
