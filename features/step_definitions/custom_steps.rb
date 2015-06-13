@@ -6,7 +6,7 @@ Given(/^I press Sign In button$/) do
   @app.welcome_screen.touch_sign_in
 end
 
-When(/^I sign in as "(.*?)" with password "(.*?)"$/) do |arg1, arg2|
+When(/^I sign in as "(.*?)" with password "(.*?)"$/) do |email, password|
   @app.sign_in_screen.enter_email(email)
   @app.sign_in_screen.enter_password(password)
 
